@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using RazorPagesRenterprise.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<RazorPagesRenterpriseContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesRenterpriseContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesRenterpriseContext' not found.")));
 
 var app = builder.Build();
 
