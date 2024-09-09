@@ -38,6 +38,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Rental/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVudGFsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Rental/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVudGFsXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Rental/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVudGFsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Rental/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVudGFsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Rental/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVudGFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +80,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Vehicle/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Workshop/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Workshop/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Workshop/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Workshop/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/Workshop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/E644tt/Documents/Code/Renterprise/RazorPagesRenterprise/Pages/_ViewImports.cshtml]

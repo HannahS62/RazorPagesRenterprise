@@ -15,5 +15,7 @@ namespace RazorPagesRenterprise.Data
         }
 
         public DbSet<RazorPagesRenterprise.Models.Vehicle> Vehicle { get; set; } = default!;
+        public DbSet<RazorPagesRenterprise.Models.Rental> Rental { get; set; } = default!;
+        public DbSet<RazorPagesRenterprise.Models.Workshop> Workshop { get; set; } = default!;
     }
 }
