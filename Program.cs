@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RazorPagesRenterprise.Data;
+using RazorPagesRenterprise.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,6 +10,16 @@ builder.Services.AddDbContext<RazorPagesRenterpriseContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesRenterpriseContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesRenterpriseContext' not found.")));
 
 var app = builder.Build();
+
+//seed database
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedDataVehicle.Initialize(services);
+    SeedDataRental.Initialize(services);
+    SeedDataWorkshop.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

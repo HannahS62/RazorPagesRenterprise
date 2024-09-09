@@ -16,3 +16,7 @@ public class Rental
     
 
 } 
+
+
+
+// reservation url: https://media.istockphoto.com/id/1278801008/vector/calendar-and-check-mark-vector-icon.jpg?s=612x612&w=0&k=20&c=mb3TThoC0BJiFFB3JcwMPkTZULhSn5osrHK3o3gDUxg=

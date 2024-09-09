@@ -9,5 +9,7 @@ public class Vehicle
     public required string Model { get; set; }
     public string? Color { get; set; }
 
+    public string? ImgUrl {get; set;}
+
 }   
 

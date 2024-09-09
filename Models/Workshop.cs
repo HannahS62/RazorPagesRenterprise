@@ -10,4 +10,9 @@ public class Workshop
         [DataType(DataType.Date)]
     public DateTime CompletionDate { get; set; }
 
+    public string? Mechanic {get; set;}
+
 }   
+
+
+//workshop image url: https://static.vecteezy.com/system/resources/thumbnails/025/902/580/small/maintenance-and-support-icon-concept-vector.jpg
