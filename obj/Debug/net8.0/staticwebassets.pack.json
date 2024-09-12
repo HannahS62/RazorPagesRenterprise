@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\images\\image.jpg",
+      "PackagePath": "staticwebassets\\images\\image.jpg"
+    },
+    {
       "Id": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

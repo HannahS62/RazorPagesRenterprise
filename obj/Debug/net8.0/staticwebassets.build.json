@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "djVPnqTPkDCTPTkMBQdacalXqrCImfT3expBr6QT0mw=",
+  "Hash": "I8OXFAsk/rR7nzj1iHrlLrj4SMHGL+40tZs0b7y5/ss=",
   "Source": "RazorPagesRenterprise",
   "BasePath": "_content/RazorPagesRenterprise",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\images\\image.jpg",
+      "SourceId": "RazorPagesRenterprise",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\",
+      "BasePath": "_content/RazorPagesRenterprise",
+      "RelativePath": "images/image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\image.jpg"
     },
     {
       "Identity": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\js\\site.js",

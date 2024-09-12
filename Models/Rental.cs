@@ -13,6 +13,8 @@ public class Rental
     public required DateTime StartDate { get; set; }
         [DataType(DataType.Date)]
     public DateTime ReturnDate { get; set; }
+
+    public required string Status {get; set;}
     
 
 } 

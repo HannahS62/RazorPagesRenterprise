@@ -7,9 +7,9 @@ public class Vehicle
     public required string Reg {get; set;}        
     public required string Make { get; set; }
     public required string Model { get; set; }
-    public string? Color { get; set; }
+    public required string Color { get; set; }
 
-    public string? ImgUrl {get; set;}
+    public required string ImgUrl {get; set;}
 
 }   
 

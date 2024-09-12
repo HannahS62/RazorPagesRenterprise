@@ -15,7 +15,13 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<RazorPagesRenterpriseContext>();
 
+    // Ensures the database is deleted and recreated each time
+    context.Database.EnsureDeleted();
+    context.Database.EnsureCreated();
+
+    //Seed data
     SeedDataVehicle.Initialize(services);
     SeedDataRental.Initialize(services);
     SeedDataWorkshop.Initialize(services);
