@@ -30,6 +30,7 @@ public static class SeedDataWorkshop
                     Fault = "Wing mirror needs replacing",
                     CompletionDate = DateTime.Parse("2024-09-16"),
                     Mechanic = "Bill",
+                    Status = "Open"
                    
                 },
                
@@ -39,6 +40,7 @@ public static class SeedDataWorkshop
                     Fault = "Dent in front left wheel arch",
                     CompletionDate = DateTime.Parse("2024-10-01"),
                     Mechanic = "Ben",
+                    Status = "Open"
                   
                 },
                 new Workshop
@@ -47,6 +49,7 @@ public static class SeedDataWorkshop
                     Fault = "Dead battery",
                     CompletionDate = DateTime.Parse("2024-09-25"),
                     Mechanic = "Unassigned",
+                    Status = "Open"
                   
                 },
                 new Workshop
@@ -55,6 +58,7 @@ public static class SeedDataWorkshop
                     Fault = "Aircon regas required",
                     CompletionDate = DateTime.Parse("2024-09-20"),
                     Mechanic = "Bob",
+                    Status = "Open"
                  
                 }                   
 

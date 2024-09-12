@@ -11,6 +11,8 @@ public class Workshop
     public DateTime CompletionDate { get; set; }
 
     public string? Mechanic {get; set;}
+
+    public required string Status {get; set;}
  
 
 }   

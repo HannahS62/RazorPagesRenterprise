@@ -16,7 +16,7 @@
 
 <div class="tiles">       
 @foreach (var item in Model.Rental) {
-    
+    @if(item.Status == "Open") {    
     <a asp-page="/Rental/Edit" asp-route-id="@item.Id">
     <ul class="tile-item">
         <img class="tile-img" src="https://media.istockphoto.com/id/1278801008/vector/calendar-and-check-mark-vector-icon.jpg?s=612x612&w=0&k=20&c=mb3TThoC0BJiFFB3JcwMPkTZULhSn5osrHK3o3gDUxg=" alt="Res img">
@@ -26,10 +26,11 @@
         <li>Return Location: @Html.DisplayFor(modelItem => item.RetLoc)</li>
         <li>Start Date: @Html.DisplayFor(modelItem => item.StartDate)</li>
         <li>Return Date: @Html.DisplayFor(modelItem => item.ReturnDate)</li>
+        <li>Status: @Html.DisplayFor(modelitem => item.Status) </li>
     </ul>
     </a>
 }
-
+}
 </div>
 
 
@@ -39,13 +40,16 @@
 
 <div class="tiles">       
 @foreach (var item in Model.Workshop) {
+    @if (item.Status =="Open") {
     <ul class="tile-item">
         <img class="tile-img" src="https://media.istockphoto.com/id/1441049847/vector/screw-driver-icon-vector-design-template-in-white-background.jpg?s=612x612&w=0&k=20&c=-IZ_BLEoeEe8wI4M6kdEdf4KopcFQpiO-HqHf6LLuck=" alt="Tools img">
         <li>Reg: @Html.DisplayFor(modelItem => item.Reg)</li>
         <li>Fault: @Html.DisplayFor(modelItem => item.Fault)</li>
         <li>Completion Date: @Html.DisplayFor(modelItem => item.CompletionDate)</li>
         <li>Mechanic: @Html.DisplayFor(modelItem => item.Mechanic)</li>
+        <li>Status: @Html.DisplayFor(modelitem => item.Status) </li>
     </ul>
+}
 }
 
 </div>
