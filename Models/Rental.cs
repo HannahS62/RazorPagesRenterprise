@@ -15,10 +15,35 @@ public class Rental
     public DateTime ReturnDate { get; set; }
 
     public required string Status {get; set;}
+
+
+    public int DaysOnRent
+    {
+        get
+        {
+            return (ReturnDate - StartDate).Days;
+        }
+    }
     
+    //DayRate - display format being used to convert double to string with a fixed value of 2 decimal places
+
+        [DisplayFormat(DataFormatString = "{0:F2}", ApplyFormatInEditMode = true)]
+    public required double DayRate { get; set;}
+     
+
+
+        [DisplayFormat(DataFormatString = "{0:F2}", ApplyFormatInEditMode = true)]
+    public double RentalPrice
+    {
+        get 
+        {
+            return DayRate * DaysOnRent;
+        }
+    }
+     
+
 
 } 
 
 
 
-// reservation url: https://media.istockphoto.com/id/1278801008/vector/calendar-and-check-mark-vector-icon.jpg?s=612x612&w=0&k=20&c=mb3TThoC0BJiFFB3JcwMPkTZULhSn5osrHK3o3gDUxg=

@@ -7,9 +7,7 @@
 
 <h1>Reservations</h1>
 
-<p>
-    <a asp-page="Create">New Reservation</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -19,18 +17,30 @@
             <th>
                 @Html.DisplayNameFor(model => model.Rental[0].Customer)
             </th>
-            <th>
+            @* <th>
                 @Html.DisplayNameFor(model => model.Rental[0].OutLoc)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Rental[0].RetLoc)
-            </th>
+            </th> *@
             <th>
                 @Html.DisplayNameFor(model => model.Rental[0].StartDate)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Rental[0].ReturnDate)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rental[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rental[0].DaysOnRent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rental[0].DayRate)
+            </th>  
+            <th>
+                @Html.DisplayNameFor(model => model.Rental[0].RentalPrice)
+            </th>                                  
             <th></th>
         </tr>
     </thead>
@@ -43,21 +53,30 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Customer)
             </td>
-            <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.OutLoc)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.RetLoc)
-            </td>
+            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ReturnDate)
             </td>
-                        <td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DaysOnRent)
+            </td>
+            <td>
+                £@Html.DisplayFor(modelItem => item.DayRate)
+            </td>
+            <td>
+                £@Html.DisplayFor(modelItem => item.RentalPrice)
+            </td>                                    
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
@@ -67,3 +86,7 @@
 }
     </tbody>
 </table>
+
+<p class="button">
+    <a asp-page="Create">Add a Reservation</a>
+</p>

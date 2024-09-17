@@ -7,9 +7,7 @@
 
 <h1>Workshop Jobs</h1>
 
-<p>
-    <a asp-page="Create">Create New Job</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -19,15 +17,16 @@
             <th>
                 @Html.DisplayNameFor(model => model.Workshop[0].Fault)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Workshop[0].CompletionDate)
-            </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.Workshop[0].Mechanic)
             </th> 
             <th>
                 @Html.DisplayNameFor(model => model.Workshop[0].Status)
-            </th>            
+            </th>   
+            <th>
+                Job Date
+            </th>                     
             <th></th>
         </tr>
     </thead>
@@ -41,11 +40,14 @@
                 @Html.DisplayFor(modelItem => item.Fault)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CompletionDate)
-            </td>
-                        <td>
                 @Html.DisplayFor(modelItem => item.Mechanic)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>            
+            <td>
+                @Html.DisplayFor(modelItem => item.CompletionDate)
+            </td>            
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
@@ -55,3 +57,7 @@
 }
     </tbody>
 </table>
+
+<p class="button">
+    <a asp-page="Create">Create New Job</a>
+</p>

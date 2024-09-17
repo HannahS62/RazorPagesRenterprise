@@ -32,7 +32,13 @@ public static class SeedDataRental
                     RetLoc = "Peterborough",
                     StartDate = DateTime.Parse("2024-08-28"),
                     ReturnDate = DateTime.Parse("2024-09-28"),
-                    Status = "Open"
+                    Status = "Open",
+                    DayRate = 16.50,
+                                     
+        
+
+
+
                 },
 
                 new Rental
@@ -43,7 +49,8 @@ public static class SeedDataRental
                     RetLoc = "Norwich",
                     StartDate = DateTime.Parse("2024-05-14"),
                     ReturnDate = DateTime.Parse("2024-10-28"),
-                    Status = "Open"
+                    Status = "Open",
+                    DayRate = 16.50,
                 },
                 new Rental
                 {
@@ -53,7 +60,8 @@ public static class SeedDataRental
                     RetLoc = "Norwich",
                     StartDate = DateTime.Parse("2024-09-04"),
                     ReturnDate = DateTime.Parse("2024-09-10"),
-                    Status = "Open"
+                    Status = "Open",
+                    DayRate = 16.50,
                 },
                 new Rental
                 {
@@ -63,7 +71,7 @@ public static class SeedDataRental
                     RetLoc = "Thetford",
                     StartDate = DateTime.Parse("2024-09-04"),
                     ReturnDate = DateTime.Parse("2024-09-22"),
-                    Status = "Open"
+                    Status = "Open",DayRate = 16.50,
                 },
                 new Rental
                 {
@@ -73,7 +81,8 @@ public static class SeedDataRental
                     RetLoc = "Norwich",
                     StartDate = DateTime.Parse("2024-02-04"),
                     ReturnDate = DateTime.Parse("2024-09-12"),
-                    Status = "Open"
+                    Status = "Open",
+                    DayRate = 16.50,
                 },
                 new Rental
                 {
@@ -83,7 +92,8 @@ public static class SeedDataRental
                     RetLoc = "Norwich",
                     StartDate = DateTime.Parse("2024-08-04"),
                     ReturnDate = DateTime.Parse("2024-09-17"),
-                    Status = "Open"
+                    Status = "Open",
+                    DayRate = 16.50,
                 }
                 );
             context.SaveChanges();

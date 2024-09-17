@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesRenterprise.Data;
 
@@ -10,9 +11,11 @@ using RazorPagesRenterprise.Data;
 namespace RazorPagesRenterprise.Migrations
 {
     [DbContext(typeof(RazorPagesRenterpriseContext))]
-    partial class RazorPagesRenterpriseContextModelSnapshot : ModelSnapshot
+    [Migration("20240917132600_AddRentalDaysOnRent")]
+    partial class AddRentalDaysOnRent
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");

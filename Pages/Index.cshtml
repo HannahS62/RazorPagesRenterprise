@@ -6,27 +6,29 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to Renterprise</h1>
-    <h2>Norwich</h2>
+    <h1 class="display-4">Renterprise Dashboard</h1>
+    <img class="logo" src="@Url.Content("~/images/image.jpg")" alt="logo">
+                       
+    
 </div>
 
 <div>
-<h3>Reservations</h3>
+<h3>Reservations <a asp-page="/Rental"> </a></h3>
 </div>
 
 <div class="tiles">       
 @foreach (var item in Model.Rental) {
     @if(item.Status == "Open") {    
-    <a asp-page="/Rental/Edit" asp-route-id="@item.Id">
+    <a asp-page="/Rental/Details" asp-route-id="@item.Id">
     <ul class="tile-item">
         <img class="tile-img" src="https://media.istockphoto.com/id/1278801008/vector/calendar-and-check-mark-vector-icon.jpg?s=612x612&w=0&k=20&c=mb3TThoC0BJiFFB3JcwMPkTZULhSn5osrHK3o3gDUxg=" alt="Res img">
         <li>Reg: @Html.DisplayFor(modelItem => item.Reg)</li>
         <li>Customer: @Html.DisplayFor(modelItem => item.Customer)</li>
-        <li>Out Location: @Html.DisplayFor(modelItem => item.OutLoc)</li>
-        <li>Return Location: @Html.DisplayFor(modelItem => item.RetLoc)</li>
         <li>Start Date: @Html.DisplayFor(modelItem => item.StartDate)</li>
         <li>Return Date: @Html.DisplayFor(modelItem => item.ReturnDate)</li>
         <li>Status: @Html.DisplayFor(modelitem => item.Status) </li>
+        <li>Days on Rent: @Html.DisplayFor(modelitem => item.DaysOnRent)</li>
+        <li>Rental Price: £@Html.DisplayFor(modelitem => item.RentalPrice)</li>
     </ul>
     </a>
 }
@@ -41,7 +43,8 @@
 <div class="tiles">       
 @foreach (var item in Model.Workshop) {
     @if (item.Status =="Open") {
-    <ul class="tile-item">
+        <a asp-page="/Workshop/Details" asp-route-id="@item.Id">
+        <ul class="tile-item">
         <img class="tile-img" src="https://media.istockphoto.com/id/1441049847/vector/screw-driver-icon-vector-design-template-in-white-background.jpg?s=612x612&w=0&k=20&c=-IZ_BLEoeEe8wI4M6kdEdf4KopcFQpiO-HqHf6LLuck=" alt="Tools img">
         <li>Reg: @Html.DisplayFor(modelItem => item.Reg)</li>
         <li>Fault: @Html.DisplayFor(modelItem => item.Fault)</li>
@@ -49,6 +52,7 @@
         <li>Mechanic: @Html.DisplayFor(modelItem => item.Mechanic)</li>
         <li>Status: @Html.DisplayFor(modelitem => item.Status) </li>
     </ul>
+    </a>
 }
 }
 

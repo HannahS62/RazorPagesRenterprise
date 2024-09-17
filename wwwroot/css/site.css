@@ -33,9 +33,9 @@ body {
 
 .tile-item {
   list-style-type: none;
-  border: 1px solid black;
+  border: 1px solid rgb(77, 83, 91);
   border-radius: 8px;
-  box-shadow: #000 0px 4px 16px 0px;
+  box-shadow: #4d535b 0px 8px 18px 0px;
   padding: 10px;
   margin: 10px;
   display: flex;
@@ -54,20 +54,31 @@ li {
   padding: 10px;
 }
 
-h1 {
+.display-4 {
+  color: #4d535b;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 80px;
 }
 
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 h2 {
-  font-size: 40px;
+  color: #4d535b;
+  font-size: 80px;
+  margin-top: 20px;
 }
 
 h3 {
+  color: #4d535b;
   margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 .container {
@@ -77,8 +88,38 @@ h3 {
 
 /* nav */
 
-img.nav-logo {
-  float: right;
-  justify-content: space-between;
-  height: 150px;
+img.logo {
+  align-items: center;
+  height: 15rem;
+  border: 1px solid rgb(77, 83, 91);
+  border-radius: 8px;
+  box-shadow: #4d535b 0px 8px 18px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(77, 83, 91);
+  font-weight: 500;
+}
+.form-control {
+  width: 20rem;
+}
+
+.nav-bg {
+  background-color: 1px solid rgb(77, 83, 91);
+}
+
+.table th {
+  padding: 15px 25px;
+  font-size: 30px;
+}
+.table td {
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.button {
+  margin-top: 50px;
+  font-size: 30px;
+  text-decoration: underline;
 }
