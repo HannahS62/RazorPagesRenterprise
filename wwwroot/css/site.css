@@ -23,6 +23,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #e2e6eb48;
 }
 
 .tiles {
@@ -42,6 +43,7 @@ body {
   flex-direction: column; /* Ensures items are stacked vertically */
   justify-content: space-around;
   width: 325px;
+  background-color: white;
 }
 
 .tile-img {
@@ -52,6 +54,7 @@ body {
 
 li {
   padding: 10px;
+  font-size: large;
 }
 
 .display-4 {
@@ -75,10 +78,15 @@ h2 {
 
 h3 {
   color: #4d535b;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.DashHeader {
+  color: #4d535b;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 40px;
-  text-decoration: underline;
+  font-size: 60px;
 }
 
 .container {
@@ -118,8 +126,28 @@ a {
   font-size: 20px;
 }
 
-.button {
-  margin-top: 50px;
-  font-size: 30px;
-  text-decoration: underline;
+dl {
+  margin-left: 50px;
+}
+dd {
+  font-size: 20px;
+}
+
+dt {
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 30px;
+  font-size: 20px;
+  border: solid rgb(77, 83, 91);
+  border-radius: 8px;
+}
+
+.navbar {
+  background-color: white;
+}
+
+p.search {
+  font-size: 25px;
 }

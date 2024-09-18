@@ -21,23 +21,15 @@ public class IndexModel : PageModel
         public IList<RazorPagesRenterprise.Models.Rental> Rental { get;set; } = default!;
         public IList<RazorPagesRenterprise.Models.Workshop> Workshop { get;set; } = default!;
 
+
         public async Task OnGetAsync()
         {
             Rental = await _context.Rental.ToListAsync();
             Workshop = await _context.Workshop.ToListAsync();
-        } 
+        }
+}   
 
 
-    // private readonly ILogger<IndexModel> _logger;
 
-    // public IndexModel(ILogger<IndexModel> logger)
-    // {
-    //     _logger = logger;
-    // }
 
-    // public void OnGet()
-    // {
-
-    // }
-}
 

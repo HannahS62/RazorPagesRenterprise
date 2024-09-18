@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\images\\CarL.jpg",
+      "PackagePath": "staticwebassets\\images\\CarL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\images\\CarR.jpg",
+      "PackagePath": "staticwebassets\\images\\CarR.jpg"
+    },
+    {
       "Id": "C:\\Users\\E644tt\\Documents\\Code\\Renterprise\\RazorPagesRenterprise\\wwwroot\\images\\image.jpg",
       "PackagePath": "staticwebassets\\images\\image.jpg"
     },

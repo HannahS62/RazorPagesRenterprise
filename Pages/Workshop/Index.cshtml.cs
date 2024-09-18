@@ -21,9 +21,24 @@ namespace RazorPagesRenterprise.Pages_Workshop
 
         public IList<Workshop> Workshop { get;set; } = default!;
 
+        //binds the value user inputs to the same name property
+        [BindProperty(SupportsGet = true)]
+        public string? SearchString {get; set;}
+
         public async Task OnGetAsync()
         {
             Workshop = await _context.Workshop.ToListAsync();
+
+                        var workshops = from w in _context.Workshop
+                            select w;
+            if(!string.IsNullOrEmpty(SearchString)) 
+            {
+                workshops = workshops.Where(w =>w.Reg != null && w.Reg.ToLower().Contains(SearchString.ToLower()));
+                
+            }
+            Workshop = await workshops.ToListAsync();
+        }
+
         }
     }
-}
+

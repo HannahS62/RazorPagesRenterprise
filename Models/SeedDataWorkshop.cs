@@ -27,7 +27,7 @@ public static class SeedDataWorkshop
                 new Workshop
                 {
                     Reg = "XU59JDK",
-                    Fault = "Wing mirror needs replacing",
+                    Fault = "Replace left wing mirror",
                     CompletionDate = DateTime.Parse("2024-09-16"),
                     Mechanic = "Bill",
                     Status = "Open"

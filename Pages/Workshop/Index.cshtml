@@ -7,6 +7,13 @@
 
 <h1>Workshop Jobs</h1>
 
+<form>
+    <p class="search">
+       Reg: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Go" />
+    </p>
+</form>
+
 
 <table class="table">
     <thead>
@@ -58,6 +65,6 @@
     </tbody>
 </table>
 
-<p class="button">
+<p class="btn">
     <a asp-page="Create">Create New Job</a>
 </p>

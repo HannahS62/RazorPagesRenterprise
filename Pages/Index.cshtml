@@ -7,13 +7,59 @@
 
 <div class="text-center">
     <h1 class="display-4">Renterprise Dashboard</h1>
-    <img class="logo" src="@Url.Content("~/images/image.jpg")" alt="logo">
-                       
-    
+    <img class="logo" src="@Url.Content("~/images/image.jpg")" alt="logo">            
 </div>
 
-<div>
-<h3>Reservations <a asp-page="/Rental"> </a></h3>
+
+<div class= "DashHeader">
+<a asp-area="" asp-page="/Rental/Index"> Due Out Today </a>
+</div>
+
+<div class="tiles">       
+@foreach (var item in Model.Rental) {
+    @if(item.Status == "Open" && item.StartDate == DateTime.Today) {    
+    <a asp-page="/Rental/Details" asp-route-id="@item.Id">
+    <ul class="tile-item">
+        <img class="tile-img" src="@Url.Content("~/images/CarR.jpg")" alt="car right">
+        <li>Reg: @Html.DisplayFor(modelItem => item.Reg)</li>
+        <li>Customer: @Html.DisplayFor(modelItem => item.Customer)</li>
+        <li>Start Date: @Html.DisplayFor(modelItem => item.StartDate)</li>
+        <li>Return Date: @Html.DisplayFor(modelItem => item.ReturnDate)</li>
+        <li>Status: @Html.DisplayFor(modelitem => item.Status) </li>
+        <li>Days on Rent: @Html.DisplayFor(modelitem => item.DaysOnRent)</li>
+        <li>Rental Price: £@Html.DisplayFor(modelitem => item.RentalPrice)</li>
+    </ul>
+    </a>
+}
+}
+</div>
+
+<div class= "DashHeader">
+<a asp-area="" asp-page="/Rental/Index"> Due In Today </a>
+</div>
+
+<div class="tiles">       
+@foreach (var item in Model.Rental) {
+    @if(item.Status == "Open" && item.ReturnDate == DateTime.Today) {    
+    <a asp-page="/Rental/Details" asp-route-id="@item.Id">
+    <ul class="tile-item">
+        <img class="tile-img" src="@Url.Content("~/images/CarL.jpg")" alt="car left">
+        <li>Reg: @Html.DisplayFor(modelItem => item.Reg)</li>
+        <li>Customer: @Html.DisplayFor(modelItem => item.Customer)</li>
+        <li>Start Date: @Html.DisplayFor(modelItem => item.StartDate)</li>
+        <li>Return Date: @Html.DisplayFor(modelItem => item.ReturnDate)</li>
+        <li>Status: @Html.DisplayFor(modelitem => item.Status) </li>
+        <li>Days on Rent: @Html.DisplayFor(modelitem => item.DaysOnRent)</li>
+        <li>Rental Price: £@Html.DisplayFor(modelitem => item.RentalPrice)</li>
+    </ul>
+    </a>
+}
+}
+</div>
+
+
+<div class= "DashHeader">
+<a asp-area="" asp-page="/Rental/Index"> All Open Reservations </a>
 </div>
 
 <div class="tiles">       
@@ -36,8 +82,8 @@
 </div>
 
 
-<div>  
-     <h3>Workshop Jobs</h3>
+<div class= "DashHeader">
+<a asp-area="" asp-page="/Workshop/Index"> Workshop Jobs </a>
 </div>
 
 <div class="tiles">       
@@ -55,5 +101,4 @@
     </a>
 }
 }
-
 </div>

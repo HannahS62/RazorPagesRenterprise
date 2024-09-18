@@ -21,9 +21,23 @@ namespace RazorPagesRenterprise.Pages_Rental
 
         public IList<Rental> Rental { get;set; } = default!;
 
+        //binds the value user inputs to the same name property
+        [BindProperty(SupportsGet = true)]
+        public string? SearchString {get; set;}
+
         public async Task OnGetAsync()
         {
             Rental = await _context.Rental.ToListAsync();
+            
+            var rentals = from r in _context.Rental
+                            select r;
+            if(!string.IsNullOrEmpty(SearchString)) 
+            {
+                rentals = rentals.Where(r =>
+                 (r.Customer != null && r.Customer.ToLower().Contains(SearchString.ToLower())) ||
+                 (r.Reg != null && r.Reg.ToLower().Contains(SearchString.ToLower()))); 
+            }
+            Rental = await rentals.ToListAsync();
         }
     }
 }
