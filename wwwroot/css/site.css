@@ -26,6 +26,10 @@ body {
   background-color: #e2e6eb48;
 }
 
+.maindiv {
+  margin-left: 80px;
+}
+
 .tiles {
   display: flex;
   flex-wrap: wrap;
@@ -150,4 +154,13 @@ dt {
 
 p.search {
   font-size: 25px;
+}
+div.help {
+  margin-top: 100px;
+  text-align: center;
+}
+
+div.helpbtn {
+  margin-top: 50px;
+  text-align: center;
 }

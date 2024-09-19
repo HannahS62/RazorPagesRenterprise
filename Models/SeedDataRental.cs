@@ -50,6 +50,30 @@ public static class SeedDataRental
                     Status = "Open",
                     DayRate = 29.50,
                 },
+                                new Rental
+                {
+                    Reg = "DU21JTK",
+                    Customer = "Mr Eaton",
+                    OutLoc = "Norwich",
+                    RetLoc = "Peterborough",
+                    StartDate = DateTime.Parse("2024-08-28"),
+                    ReturnDate = DateTime.Parse("2024-09-08"),
+                    Status = "Closed",
+                    DayRate = 27.50,                                 
+    
+                },
+
+                new Rental
+                {
+                    Reg = "PL73UJJ",
+                    Customer = "Mrs Hicken",
+                    OutLoc = "Norwich",
+                    RetLoc = "Norwich",
+                    StartDate = DateTime.Parse("2024-05-14"),
+                    ReturnDate = DateTime.Parse("2024-08-28"),
+                    Status = "Closed",
+                    DayRate = 29.50,
+                },
                 new Rental
                 {
                     Reg = "HY31TSK",
@@ -82,18 +106,19 @@ public static class SeedDataRental
                     Status = "Open",
                     DayRate = 46.50,
                 },
+                  // Out reservations
                 new Rental
                 {
                     Reg = "XU59JDK",
                     Customer = "Miss Smiley",
                     OutLoc = "Norwich",
                     RetLoc = "Norwich",
-                    StartDate = DateTime.Parse("2024-08-04"),
-                    ReturnDate = DateTime.Parse("2024-09-17"),
+                    StartDate = DateTime.Today,
+                    ReturnDate = DateTime.Parse("2024-09-27"),
                     Status = "Open",
                     DayRate = 34.50,
                 },
-                // Out reservations
+              
                 new Rental
                 {
                     Reg = "AU55HIY",
